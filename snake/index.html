@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🐍 Snake Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<button id="soundBtn" class="on">🔊 ON</button>
+
+<div class="wrapper">
+  <h1>🐍 SNAKE</h1>
+
+  <div class="hud">
+    <div class="hud-box">
+      <div class="hud-label">SCORE</div>
+      <div class="hud-value" id="scoreDisplay">0</div>
+    </div>
+    <div class="hud-box">
+      <div class="hud-label">BEST</div>
+      <div class="hud-value" id="bestDisplay">0</div>
+    </div>
+    <div class="hud-box">
+      <div class="hud-label">LEVEL</div>
+      <div class="hud-value" id="levelDisplay">1</div>
+    </div>
+  </div>
+
+  <div style="position:relative;">
+    <canvas id="gameCanvas"></canvas>
+    <div id="overlay">
+      <h2 id="overlayTitle">🐍 SNAKE</h2>
+      <p id="overlayMsg">Boshlash uchun tugmani bosing<br><br>Boshqaruv: WASD yoki ← → ↑ ↓</p>
+      <div class="big-score" id="overlayScore" style="display:none">0</div>
+      <button class="btn" id="startBtn">▶ BOSHLASH</button>
+    </div>
+  </div>
+
+  <div class="controls-hint">
+    <span>W</span><span>A</span><span>S</span><span>D</span>
+    &nbsp;yoki&nbsp;
+    <span>↑</span><span>←</span><span>↓</span><span>→</span>
+    &nbsp;—&nbsp;boshqaruv
+  </div>
+
+  <div class="dpad">
+    <div></div>
+    <button class="dpad-btn" id="dUp">▲</button>
+    <div></div>
+    <button class="dpad-btn" id="dLeft">◄</button>
+    <div class="dpad-btn center"></div>
+    <button class="dpad-btn" id="dRight">►</button>
+    <div></div>
+    <button class="dpad-btn" id="dDown">▼</button>
+    <div></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
